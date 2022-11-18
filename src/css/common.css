@@ -16,3 +16,46 @@ img {
   display: block;
   max-width: 100%;
 }
+
+button[data-start],
+button[data-stop] {
+  width: 10%;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+input[id='datetime-picker'] {
+  height: 50px;
+  font-size: 20px;
+}
+.timer {
+  display: flex;
+}
+
+.field {
+  width: 100px;
+  background: rgb(23, 78, 180);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 15px;
+  padding: 10px;
+}
+
+div .label {
+  font-weight: 500;
+  padding: 10px;
+  color: rgb(171, 214, 243);
+}
+div .value {
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: 500;
+
+  color: bisque;
+  background-color: #6f76d4;
+  border-radius: 7px;
+  padding: 5px;
+  margin: 0 auto;
+}
