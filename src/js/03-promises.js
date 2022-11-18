@@ -17,14 +17,14 @@ function handelFormSubmit(event) {
         .then(({ position, delay }) => {
           Notiflix.Notify.success(
             `✅ Fulfilled promise ${position} in ${
-              delay * position + +inputDelay
+              delay * (position - 1) + +inputDelay
             }ms`
           );
         })
         .catch(({ position, delay }) => {
           Notiflix.Notify.failure(
             `❌ Rejected promise ${position} in ${
-              delay * position + +inputDelay
+              delay * (position - 1) + +inputDelay
             }ms`
           );
         });
